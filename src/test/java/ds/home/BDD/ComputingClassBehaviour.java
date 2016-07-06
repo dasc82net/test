@@ -4,8 +4,12 @@ import org.junit.Assert;
 import org.junit.Test;
 
 
-public class ExpectedBehaviour {
+public class ComputingClassBehaviour {
 
+    @Test
+    public void zeroAddition() {
+        Assert.assertTrue(new ComputingClass(0, 0).add().intValue() == 0);
+    }
 	@Test
 	public void intAddition(){
 		Assert.assertTrue(new ComputingClass(2, 3).add().intValue() == 5);
@@ -19,9 +23,5 @@ public class ExpectedBehaviour {
 //	@Test
 //	public void intFractionAddition(){
 //	}
-//	
-//	@Test
-//	public void zeroAddition(){
-//		
-//	}
+
 }

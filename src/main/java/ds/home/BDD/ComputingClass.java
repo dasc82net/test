@@ -1,13 +1,23 @@
 package ds.home.BDD;
 
-import org.apache.commons.math.fraction.Fraction;
+import org.apache.commons.math3.fraction.Fraction;
 
 public class ComputingClass {
-	
+
+    FractionFactory ff = new FractionFactory();
 	
 	Fraction fraction1;
 	Fraction fraction2;
 	
+    /**
+     * @param st1
+     * @param st2
+     */
+    ComputingClass(String st1, String st2) {
+        super();
+        this.fraction1 = ff.createFraction(st1);
+        this.fraction2 = ff.createFraction(st2);
+    }
 
 	/**
 	 * @param int1
@@ -15,10 +25,9 @@ public class ComputingClass {
 	 */
 	ComputingClass(int int1, int int2) {
 		super();
-		this.fraction1 = new Fraction(int1);
-		this.fraction2 = new Fraction(int2);
+        this.fraction1 = ff.createFraction(int1);
+        this.fraction2 = ff.createFraction(int2);
 	}
-	
 	
 	/**
 	 * @param fraction1
@@ -35,4 +44,5 @@ public class ComputingClass {
 	}
 	
 	
+
 }

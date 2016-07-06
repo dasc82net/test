@@ -10,11 +10,10 @@
   		<scope>test</scope>
   		<version>4.12</version>
   	</dependency>
-  	<dependency>
-  		<groupId>org.kie.modules</groupId>
-  		<artifactId>org-apache-commons-math</artifactId>
-  		<version>6.4.0.Final</version>
-  		<type>pom</type>
-  	</dependency>
+<dependency>
+  <groupId>org.apache.commons</groupId>
+  <artifactId>commons-math3</artifactId>
+  <version>3.6.1</version>
+</dependency>
   </dependencies>
 </project>
